@@ -1,0 +1,24 @@
+<div>
+  <h2>Job Application for Heroes</h2>
+  <mat-tab-group>
+    <mat-tab label="Description">
+      <p>
+        The purpose of this is to demo use of Angular Dynamic Forms in conjunction
+        with use of Material Angular components. 
+        <br><br>
+        The first example renders a dynamic form<br><br>
+        The second example uses a material dialog to display the dynamic form
+      </p>
+    </mat-tab>
+    <mat-tab label="Dynamic Form">
+      <!-- add the dynamic form -->
+      <app-dynamic-form [questions]="questions"></app-dynamic-form>
+    </mat-tab>
+    <mat-tab label="From Dialog">
+      <p>
+        Open the <strong>Dynamic Form</strong> inside a Material Dialog
+      </p>
+      <button mat-stroked-button (click)="openDialog()">Open Dynamic Form</button>
+    </mat-tab>
+  </mat-tab-group>
+</div>

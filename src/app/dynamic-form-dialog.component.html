@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Job Application</h2>
+<mat-dialog-content>
+  <app-dynamic-form 
+    [questions]="questions" [isDialog]="true"
+    (close)="closeDialog()" (submit)="closeDialog()"></app-dynamic-form>
+</mat-dialog-content>
